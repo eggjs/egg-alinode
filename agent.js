@@ -1,0 +1,31 @@
+'use strict';
+
+const assert = require('assert');
+const AlinodeAgent = require('agentx');
+const os = require('os');
+const fs = require('fs');
+const path = require('path');
+
+module.exports = agent => {
+  const config = agent.config.alinode;
+  if (!config.enable) {
+    agent.coreLogger.info('[egg-alinode] disable');
+    return;
+  }
+  assert(config.appid, 'config.alinode.appid required');
+  assert(config.secret, 'config.alinode.secret required');
+
+  const nodepathFile = path.join(os.homedir(), '.nodepath');
+  const nodeBin = path.dirname(process.execPath);
+  fs.writeFileSync(nodepathFile, nodeBin);
+  new AlinodeAgent(config).run();
+  agent.coreLogger.info('[egg-alinode] alinode agentx started, node versions: %j, update %s with %j, config: %j',
+    process.versions,
+    nodepathFile,
+    nodeBin,
+    {
+      server: config.server,
+      appid: config.appid,
+    }
+  );
+};

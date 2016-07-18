@@ -19,6 +19,7 @@ describe('test/plugin.test.js', () => {
   it('should', () => {
     return request(app.callback())
     .get('/')
+    .expect('hello alinode')
     .expect(200);
   });
 

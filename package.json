@@ -23,7 +23,6 @@
     "autod": "2",
     "egg": "*",
     "egg-bin": "1",
-    "egg-ci": "1",
     "egg-mock": "*",
     "eslint": "3",
     "eslint-config-egg": "3",
@@ -40,9 +39,6 @@
     "lint": "eslint --ext js . --fix",
     "ci": "npm run lint && npm run cov",
     "autod": "autod"
-  },
-  "ci": {
-    "version": "4, 6"
   },
   "files": [
     "config",

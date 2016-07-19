@@ -18,6 +18,9 @@ module.exports = agent => {
   const nodepathFile = path.join(os.homedir(), '.nodepath');
   const nodeBin = path.dirname(process.execPath);
   fs.writeFileSync(nodepathFile, nodeBin);
+
+  config.logger = agent.coreLogger;
+  config.libMode = true;
   new AlinodeAgent(config).run();
   agent.coreLogger.info('[egg-alinode] alinode agentx started, node versions: %j, update %s with %j, config: %j',
     process.versions,

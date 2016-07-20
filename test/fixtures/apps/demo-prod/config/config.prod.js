@@ -1,5 +1,9 @@
 'use strict';
 
+exports.logger = {
+  consoleLevel: 'error',
+};
+
 exports.alinode = {
   appid: process.env.ALINODE_APPID,
   secret: process.env.ALINODE_SECRET,

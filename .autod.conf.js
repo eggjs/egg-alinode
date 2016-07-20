@@ -7,14 +7,15 @@ module.exports = {
      'test',
      'benchmark',
    ],
+  dep: [
+    'commandx'
+  ],
   devdep: [
-    'egg-ci',
     'egg-bin',
     'autod',
     'eslint',
     'eslint-config-egg',
-    'supertest',
-    'supertest-as-promised',
+    'supertest'
   ],
   exclude: [
     './test/fixtures',

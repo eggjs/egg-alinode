@@ -15,19 +15,19 @@
     "alinode"
   ],
   "dependencies": {
-    "agentx": "^1.5.1",
+    "agentx": "^1.5.2",
     "commandx": "^1.1.1",
     "mkdirp": "^0.5.1"
   },
   "devDependencies": {
-    "autod": "2",
+    "autod": "^2.6.1",
     "egg": "*",
-    "egg-bin": "1",
+    "egg-bin": "^1.0.2",
     "egg-mock": "*",
-    "eslint": "3",
-    "eslint-config-egg": "3",
-    "supertest": "1",
-    "supertest-as-promised": "3"
+    "eslint": "^3.1.1",
+    "eslint-config-egg": "^3.1.0",
+    "supertest": "^1.2.0",
+    "supertest-as-promised": "^3.2.0"
   },
   "engines": {
     "node": ">=4.0.0"

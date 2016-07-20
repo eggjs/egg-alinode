@@ -1,6 +1,7 @@
 'use strict';
 
 exports.alinode = {
+  enable: false,
   appid: process.env.ALINODE_APPID,
   secret: process.env.ALINODE_SECRET,
 };
@@ -8,5 +9,3 @@ exports.alinode = {
 if (process.env.ALINODE_SERVER) {
   exports.alinode.server = process.env.ALINODE_SERVER;
 }
-
-exports.keys = 'foo';

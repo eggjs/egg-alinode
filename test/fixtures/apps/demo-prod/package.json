@@ -1,0 +1,17 @@
+{
+  "name": "demo",
+  "dependencies": {
+    "agentx": "^1.5.1",
+    "commandx": "^1.1.1",
+    "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {
+    "autod": "2",
+    "egg-bin": "1",
+    "egg-ci": "1",
+    "eslint": "3",
+    "eslint-config-egg": "3",
+    "supertest": "1",
+    "supertest-as-promised": "3"
+  }
+}

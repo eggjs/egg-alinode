@@ -14,4 +14,4 @@ install:
 script:
   - npm run ci
 after_script:
-  - npm i codecov && codecov
+  - npminstall codecov && codecov

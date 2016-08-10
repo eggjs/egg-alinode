@@ -15,27 +15,31 @@
     "alinode"
   ],
   "dependencies": {
-    "agentx": "^1.5.2",
-    "commandx": "^1.1.1",
-    "mkdirp": "^0.5.1"
+    "agentx": "^1.5.6",
+    "commandx": "^1.2.3",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.14.1",
+    "mz": "^2.4.0"
   },
   "devDependencies": {
-    "autod": "^2.6.1",
+    "autod": "^2.7.0",
     "egg": "*",
-    "egg-bin": "^1.0.2",
+    "egg-bin": "^1.2.0",
     "egg-mock": "*",
-    "eslint": "^3.1.1",
+    "eslint": "^3.2.2",
     "eslint-config-egg": "^3.1.0",
-    "supertest": "^1.2.0",
-    "supertest-as-promised": "^3.2.0"
+    "glob": "^7.0.5",
+    "intelli-espower-loader": "^1.0.1",
+    "power-assert": "^1.4.1",
+    "supertest": "^2.0.0"
   },
   "engines": {
     "node": ">=4.0.0"
   },
   "scripts": {
     "test": "npm run lint && npm run test-local",
-    "test-local": "egg-bin test",
-    "cov": "egg-bin cov",
+    "test-local": "egg-bin test -r intelli-espower-loader",
+    "cov": "egg-bin cov -r intelli-espower-loader",
     "lint": "eslint --ext js . --fix",
     "ci": "npm run lint && npm run cov",
     "autod": "autod"

@@ -1,6 +1,6 @@
 {
   "name": "egg-alinode",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "alinode plugin for egg",
   "eggPlugin": {
     "name": "alinode"

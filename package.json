@@ -46,6 +46,7 @@
   },
   "files": [
     "config",
+    "app",
     "agent.js"
   ],
   "author": "fengmk2 <fengmk2@gmail.com> (https://fengmk2.com)"

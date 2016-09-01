@@ -1,8 +1,8 @@
 'use strict';
 
 exports.alinode = {
-  appid: process.env.ALINODE_APPID,
-  secret: process.env.ALINODE_SECRET,
+  appid:'2897',
+  secret: 'a50cab5a09d77441255f9e27bbf74ae1612221a5',
 };
 
 if (process.env.ALINODE_SERVER) {

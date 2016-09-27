@@ -42,8 +42,9 @@ Add `appid` and `secret` from http://alinode.aliyun.com/
 ```js
 // config/config.default.js
 exports.alinode = {
-  appid: '123',
-  secret: 'my secret haha',
+  enable: true,
+  appid: 'my app id',
+  secret: 'my app secret',
 };
 ```
 

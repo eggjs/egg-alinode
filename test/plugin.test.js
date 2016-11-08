@@ -19,6 +19,7 @@ describe('test/plugin.test.js', () => {
     before(() => {
       app = mm.app({
         baseDir: 'apps/demo',
+        customEgg: require.resolve('egg'),
       });
       return app.ready();
     });
@@ -105,6 +106,7 @@ describe('test/plugin.test.js', () => {
     before(() => {
       app = mm.app({
         baseDir: 'apps/disable-by-config',
+        customEgg: require.resolve('egg'),
       });
       return app.ready();
     });
@@ -129,6 +131,7 @@ describe('test/plugin.test.js', () => {
       app = mm.app({
         baseDir: 'apps/demo-prod',
         cache: false,
+        customEgg: require.resolve('egg'),
       });
       return app.ready();
     });

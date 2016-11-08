@@ -5,7 +5,7 @@ exports.logger = {
 };
 
 exports.alinode = {
-  appid:'2897',
+  appid: '2897',
   secret: 'a50cab5a09d77441255f9e27bbf74ae1612221a5',
 };
 

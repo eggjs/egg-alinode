@@ -11,40 +11,39 @@
   },
   "keywords": [
     "egg",
-    "plugin",
+    "eggPlugin",
+    "egg-plugin",
     "alinode"
   ],
   "dependencies": {
-    "agentx": "^1.5.7",
-    "commandx": "^1.2.3",
+    "agentx": "^1.7.2",
+    "commandx": "^1.3.1",
     "mkdirp": "^0.5.1",
-    "moment": "^2.14.1",
-    "mz": "^2.4.0"
+    "moment": "^2.17.1",
+    "mz": "^2.6.0"
   },
   "devDependencies": {
-    "autod": "^2.7.0",
-    "egg": "*",
-    "egg-bin": "^1.2.0",
-    "egg-ci": "^1.0.3",
-    "egg-mock": "*",
-    "eslint": "^3.2.2",
-    "eslint-config-egg": "^3.1.0",
-    "glob": "^7.0.5",
-    "intelli-espower-loader": "^1.0.1",
-    "power-assert": "^1.4.1",
-    "supertest": "^2.0.0"
+    "autod": "^2.7.1",
+    "egg": "^0.9.0",
+    "egg-bin": "^2.0.2",
+    "egg-ci": "^1.1.0",
+    "egg-mock": "^2.3.1",
+    "eslint": "^3.14.1",
+    "eslint-config-egg": "^3.2.0",
+    "glob": "^7.1.1",
+    "supertest": "^3.0.0"
   },
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=6.0.0"
   },
   "ci": {
-    "version": "4, 6, 7"
+    "version": "6, 7"
   },
   "scripts": {
-    "test": "npm run lint && npm run test-local",
-    "test-local": "egg-bin test -r intelli-espower-loader",
-    "cov": "egg-bin cov -r intelli-espower-loader",
-    "lint": "eslint app config test *.js",
+    "lint": "eslint .",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
     "ci": "npm run lint && npm run cov",
     "autod": "autod"
   },

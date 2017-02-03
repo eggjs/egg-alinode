@@ -6,7 +6,7 @@ const path = require('path');
 const fs = require('fs');
 const glob = require('glob');
 const moment = require('moment');
-const assert = require('power-assert');
+const assert = require('assert');
 
 describe('test/plugin.test.js', () => {
   afterEach(mm.restore);

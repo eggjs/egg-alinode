@@ -11,7 +11,9 @@ module.exports = {
     'commandx'
   ],
   devdep: [
+    "egg",
     'egg-bin',
+    'egg-ci',
     'autod',
     'eslint',
     'eslint-config-egg',

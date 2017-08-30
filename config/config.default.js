@@ -17,7 +17,7 @@ module.exports = appInfo => {
   exports.alinode = {
     enable: true,
     // default is alinode.aliyun.com
-    server: '120.55.151.247:8080',
+    server: 'agentserver.alinode.aliyun.com:8080',
     appid: '',
     secret: '',
     cmddir: path.dirname(require.resolve('commandx/package.json')),

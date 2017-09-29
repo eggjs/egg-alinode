@@ -34,7 +34,10 @@ Enable this plugin
 
 ```js
 // config/plugin.js
-exports.alinode = true;
+exports.alinode = {
+  enable: true,
+  package: 'egg-alinode',
+};
 ```
 
 Add `appid` and `secret` from http://alinode.aliyun.com/
@@ -52,6 +55,12 @@ Start dispatch.js with `NODE_LOG_DIR={logdir}` and `ENABLE_NODE_LOG=yes` env:
 
 ```bash
 $ ENABLE_NODE_LOG=yes NODE_LOG_DIR=/mylogdir/ alinode dispatch.js
+```
+
+> If you use `egg-scripts`, the env is already set for you.
+
+```bash
+$ egg-scripts start
 ```
 
 ## Questions & Suggestions

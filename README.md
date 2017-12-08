@@ -40,7 +40,7 @@ exports.alinode = {
 };
 ```
 
-Add `appid` and `secret` from http://alinode.aliyun.com/
+Add `appid` and `secret` from https://node.console.aliyun.com/
 
 ```js
 // config/config.default.js

@@ -20,7 +20,8 @@
     "commandx": "^1.3.1",
     "mkdirp": "^0.5.1",
     "moment": "^2.17.1",
-    "mz": "^2.6.0"
+    "mz": "^2.6.0",
+    "node-homedir": "^1.1.0"
   },
   "devDependencies": {
     "autod": "^2.7.1",

@@ -1,9 +1,11 @@
 'use strict';
 
+exports.keys = 'foo';
+
 exports.alinode = {
   enable: false,
-  appid: '2897',
-  secret: 'a50cab5a09d77441255f9e27bbf74ae1612221a5',
+  appid: '189',
+  secret: '0d9701851077f3b378b06b719b511e5ae3c67aee',
 };
 
 if (process.env.ALINODE_SERVER) {

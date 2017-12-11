@@ -1,4 +1,13 @@
 
+2.0.0 / 2017-12-11
+==================
+
+**features**
+  * [[`e71f1d5`](http://github.com/eggjs/egg-alinode/commit/e71f1d5bb60fb91469419678d496d9704df77da8)] - feat: [BREAKING] switch to new alinode console (#10) (Jackson Tian <<shyvo1987@gmail.com>>)
+
+**others**
+  * [[`992f313`](http://github.com/eggjs/egg-alinode/commit/992f31372ba1f16e5ec012ad9f5208ea11cdd0dd)] - docs: fix plugin import (#8) (TZ | 天猪 <<atian25@qq.com>>)
+
 1.1.1 / 2017-08-30
 ==================
 

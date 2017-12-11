@@ -1,4 +1,13 @@
 
+2.0.1 / 2017-12-11
+==================
+
+**fixes**
+  * [[`907d2c7`](http://github.com/eggjs/egg-alinode/commit/907d2c79db27580ce6d11e95c992390483d90218)] - fix: change os.homedir to node-homedir (#9) (limerick <<guods2015@gmail.com>>)
+
+**others**
+  * [[`9c411cd`](http://github.com/eggjs/egg-alinode/commit/9c411cde3273737285e643c678df25bb2285d401)] - test: update test secret and appid (fengmk2 <<fengmk2@gmail.com>>)
+
 2.0.0 / 2017-12-11
 ==================
 

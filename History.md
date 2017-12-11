@@ -1,4 +1,13 @@
 
+1.1.2 / 2017-12-11
+==================
+
+**fixes**
+  * [[`51bc4c8`](http://github.com/eggjs/egg-alinode/commit/51bc4c868afa829e13d34f70b922f00eb70d0b75)] - fix: change os.homedir to node-homedir (#9) (limerick <<guods2015@gmail.com>>)
+
+**others**
+  * [[`12f9e61`](http://github.com/eggjs/egg-alinode/commit/12f9e613e36f15095236aa20e4c1753440728a13)] - chore: add latest-1 tag (fengmk2 <<fengmk2@gmail.com>>)
+
 1.1.1 / 2017-08-30
 ==================
 

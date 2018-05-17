@@ -16,23 +16,23 @@
     "alinode"
   ],
   "dependencies": {
-    "agentx": "^1.8.4",
-    "commandx": "^1.3.3",
+    "agentx": "^1.9.3",
+    "commandx": "^1.5.0",
     "mkdirp": "^0.5.1",
-    "moment": "^2.17.1",
-    "mz": "^2.6.0",
+    "moment": "^2.22.1",
+    "mz": "^2.7.0",
     "node-homedir": "^1.1.0"
   },
   "devDependencies": {
-    "autod": "^2.7.1",
-    "egg": "^0.9.0",
-    "egg-bin": "^2.0.2",
-    "egg-ci": "^1.1.0",
-    "egg-mock": "^2.3.1",
-    "eslint": "^3.14.1",
-    "eslint-config-egg": "^3.2.0",
-    "glob": "^7.1.1",
-    "supertest": "^3.0.0"
+    "autod": "^3.0.1",
+    "egg": "latest-1",
+    "egg-bin": "^4.7.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.17.1",
+    "eslint": "^4.19.1",
+    "eslint-config-egg": "^7.0.0",
+    "glob": "^7.1.2",
+    "supertest": "^3.1.0"
   },
   "engines": {
     "node": ">=6.0.0"

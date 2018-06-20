@@ -30,9 +30,9 @@ describe('test/plugin.test.js', () => {
 
     it('should alinode enable', () => {
       return request(app.callback())
-      .get('/')
-      .expect('hello alinode, enable: true, env: unittest')
-      .expect(200);
+        .get('/')
+        .expect('hello alinode, enable: true, env: unittest')
+        .expect(200);
     });
 
     it('should remove old log files', function* () {
@@ -117,9 +117,9 @@ describe('test/plugin.test.js', () => {
 
     it('should alinode disable', () => {
       return request(app.callback())
-      .get('/')
-      .expect('hello alinode, enable: false')
-      .expect(200);
+        .get('/')
+        .expect('hello alinode, enable: false')
+        .expect(200);
     });
   });
 
@@ -142,9 +142,9 @@ describe('test/plugin.test.js', () => {
 
     it('should alinode enable', () => {
       return request(app.callback())
-      .get('/')
-      .expect('hello alinode, enable: true, env: prod')
-      .expect(200);
+        .get('/')
+        .expect('hello alinode, enable: true, env: prod')
+        .expect(200);
     });
   });
 });

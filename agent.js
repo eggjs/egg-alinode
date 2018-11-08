@@ -1,19 +1,26 @@
 'use strict';
 
-const assert = require('assert');
 const AlinodeAgent = require('agentx');
 const homedir = require('node-homedir');
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 
 module.exports = agent => {
   const config = agent.config.alinode;
+  const platform = (os.platform() || '').toLowerCase();
   if (!config.enable) {
     agent.coreLogger.info('[egg-alinode] disable');
     return;
   }
-  assert(config.appid, 'config.alinode.appid required');
-  assert(config.secret, 'config.alinode.secret required');
+  if (!config.appid || !config.secret) {
+    agent.coreLogger.info('[egg-alinode] config.alinode.appid && config.alinode.secret required');
+    return;
+  }
+  if (platform === 'win32') {
+    agent.coreLogger.info('[egg-alinode] alinode does not support windows for the time being.');
+    return;
+  }
 
   const nodepathFile = path.join(homedir(), '.nodepath');
   const nodeBin = path.dirname(process.execPath);

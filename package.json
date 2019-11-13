@@ -21,7 +21,8 @@
     "mkdirp": "^0.5.1",
     "moment": "^2.22.1",
     "mz": "^2.7.0",
-    "node-homedir": "^1.1.0"
+    "node-homedir": "^1.1.0",
+    "snyk": "^1.230.5"
   },
   "devDependencies": {
     "autod": "^3.0.1",
@@ -46,12 +47,15 @@
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
     "ci": "npm run lint && npm run cov",
-    "autod": "autod"
+    "autod": "autod",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "files": [
     "config",
     "app",
     "agent.js"
   ],
-  "author": "fengmk2 <fengmk2@gmail.com> (https://fengmk2.com)"
+  "author": "fengmk2 <fengmk2@gmail.com> (https://fengmk2.com)",
+  "snyk": true
 }

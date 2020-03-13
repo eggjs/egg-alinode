@@ -18,7 +18,7 @@
   "dependencies": {
     "agentx": "^1.9.3",
     "commandx": "^1.5.0",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^1.0.0",
     "moment": "^2.22.1",
     "mz": "^2.7.0",
     "node-homedir": "^1.1.0"
